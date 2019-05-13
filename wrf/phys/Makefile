@@ -3,7 +3,7 @@
 .SUFFIXES:
 .SUFFIXES: .o .F
 
-include ../user_build_options
+include ../../hrldas/user_build_options
 
 OBJS = \
 	module_sf_noahmpdrv.o \
@@ -24,7 +24,7 @@ all:	$(OBJS)
 	@echo ""
 	$(RM) $(*).f90
 	$(CPP) $(CPPFLAGS) $(CPPHRLDAS) $(*).F > $(*).f90
-	$(COMPILERF90) -o $(@) -c -I../Utility_routines $(F90FLAGS) $(FREESOURCE) $(*).f90
+	$(COMPILERF90) -o $(@) -c -I../../hrldas/Utility_routines $(F90FLAGS) $(FREESOURCE) $(*).f90
 	@echo ""
 
 #
