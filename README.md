@@ -1,6 +1,6 @@
-# hrldas-release
+# hrldas
 
-HRLDAS (High Resolution Land Data Assimilation System) containing the Noah-MP Land Surface Model
+HRLDAS (High Resolution Land Data Assimilation System)
 
 Repository branch structure (as of July 27, 2018)
 
